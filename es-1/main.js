@@ -6,7 +6,9 @@ console.log("numero minimo: " + minValue);
 const maxValue = parseInt(prompt("inserire valore massimo"));
 console.log("numero massimo: " + maxValue);
 
-// n random da minValue a maxValue
-const randomNumber = Math.floor(Math.random() * maxValue + minValue);
-console.log("numero generato: " + randomNumber);
-alert("numero generato: " + randomNumber);
+for (let i = 0; i < 100; i++) {
+    // n random da minValue a maxValue
+    const randomNumber = Math.floor(Math.random() * maxValue - minValue + 1) + minValue;
+    console.log("numero generato: " + randomNumber);
+    // alert("numero generato: " + randomNumber);
+}
